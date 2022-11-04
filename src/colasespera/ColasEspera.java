@@ -30,6 +30,7 @@ public class ColasEspera {
                 Colas de espera en los bancos
                 etc, etc, etc...
         */
+        /*
         Cola <Integer> cola=new Cola<Integer>();
         for(int i=0; i<10; i++){
             cola.inserta(i);
@@ -47,7 +48,31 @@ public class ColasEspera {
             e.printStackTrace();
         }
         
+        */
+        ColaAscendente<Integer> colaAscendente = new ColaAscendente<Integer>();
+        colaAscendente.inserta(1); colaAscendente.imprime();
+        colaAscendente.inserta(8); colaAscendente.imprime();  
+        colaAscendente.inserta(3); colaAscendente.imprime();  
+        colaAscendente.inserta(6); colaAscendente.imprime();  
+        colaAscendente.inserta(5); colaAscendente.imprime();  
+        colaAscendente.inserta(4); colaAscendente.imprime();
+        colaAscendente.inserta(7); colaAscendente.imprime();
+        colaAscendente.inserta(2); colaAscendente.imprime();
+        colaAscendente.inserta(9); colaAscendente.imprime();
+        
+        colaAscendente.imprime();
+        try{
+             for(int i=0; i<9; i++){
+                 Integer elemento = colaAscendente.elimina();
+                 System.out.println("Elemento eliminado de la"
+                         + " cola: "+ elemento);
+                 colaAscendente.imprime();
+             }
+        }catch(ExcepcionEDVacia e){
+            e.printStackTrace();
+        }
         
     }
+
     
 }

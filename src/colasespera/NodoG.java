@@ -7,6 +7,7 @@ package colasespera;
 /**
  *
  * @author danie
+ * @param <T>
  */
 
 /* La clase nos permite la creacion (instanciacion) de 

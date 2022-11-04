@@ -7,6 +7,7 @@ package colasespera;
 /**
  *
  * @author danie
+ * @param <T>
  */
 public class Cola<T> {
 
